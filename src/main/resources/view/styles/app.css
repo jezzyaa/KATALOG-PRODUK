@@ -1,0 +1,143 @@
+/* Palet:  krem #FFF3D6 | tomat #D43D2C | coklat #5B3A29 | mentega #FFD36B*/
+
+/* ---------- Latar halaman: krem + taplak kotak-kotak ---------- */
+.root {
+    -fx-font-family: "Trebuchet MS";
+    -fx-font-size: 14px;
+    -fx-background-color:
+        #FFF3D6,
+        linear-gradient(from 0px 0px to 28px 0px, repeat,
+            rgba(212, 61, 44, 0.12) 0%, rgba(212, 61, 44, 0.12) 50%,
+            transparent 50%, transparent 100%),
+        linear-gradient(from 0px 0px to 0px 28px, repeat,
+            rgba(212, 61, 44, 0.12) 0%, rgba(212, 61, 44, 0.12) 50%,
+            transparent 50%, transparent 100%);
+}
+
+/* ---------- Teks ---------- */
+.label { -fx-text-fill: #5B3A29; }
+.muted { -fx-text-fill: #7A5A47; -fx-font-size: 12px; }
+
+/* Judul seperti spanduk bandana */
+.title {
+    -fx-background-color: #D43D2C;
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 22;
+    -fx-effect: dropshadow(one-pass-box, #A12A1D, 0, 0, 0, 3);
+}
+
+/* ---------- Kepala halaman (form) ---------- */
+.header {
+    -fx-padding: 20 24;
+    -fx-background-color: #FFF9EC;
+    -fx-border-color: transparent transparent #D43D2C transparent;
+    -fx-border-width: 0 0 5 0;
+    -fx-effect: dropshadow(gaussian, rgba(91, 58, 41, 0.25), 8, 0, 0, 3);
+}
+
+/* ---------- Kolom isian ---------- */
+.text-field {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #B08052;
+    -fx-border-width: 2;
+    -fx-border-radius: 12;
+    -fx-padding: 8 12;
+    -fx-text-fill: #5B3A29;
+    -fx-prompt-text-fill: #86695A;
+}
+.text-field:focused { -fx-border-color: #D43D2C; }
+.combo-box {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-border-color: #B08052;
+    -fx-border-width: 2;
+    -fx-border-radius: 12;
+    -fx-padding: 4;
+}
+.combo-box:focused { -fx-border-color: #D43D2C; }
+.combo-box .list-cell { -fx-text-fill: #5B3A29; }
+
+/* ---------- Tombol ---------- */
+.button {
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+.button:pressed { -fx-translate-y: 2; }
+
+.button-primary {
+    -fx-background-color: #D43D2C;
+    -fx-background-insets: 0;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-padding: 10 26;
+    -fx-effect: dropshadow(one-pass-box, #A12A1D, 0, 0, 0, 3);
+}
+.button-primary:hover { -fx-background-color: #BB3222; }
+
+.button-secondary {
+    -fx-background-color: #FFD36B;
+    -fx-background-insets: 0;
+    -fx-background-radius: 20;
+    -fx-text-fill: #5B3A29;
+    -fx-padding: 8 20;
+    -fx-effect: dropshadow(one-pass-box, #C9962B, 0, 0, 0, 3);
+}
+.button-secondary:hover { -fx-background-color: #FFC94A; }
+
+.button-danger {
+    -fx-background-color: #A32035;
+    -fx-background-insets: 0;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-padding: 8 20;
+    -fx-effect: dropshadow(one-pass-box, #6E1424, 0, 0, 0, 3);
+}
+.button-danger:hover { -fx-background-color: #8A1B2D; }
+
+/* ---------- Katalog dan kartu resep ---------- */
+.katalog { -fx-padding: 20 24; }
+
+.kartu-produk {
+    -fx-background-color: #FFFDF7;
+    -fx-background-radius: 18;
+    -fx-padding: 16;
+    -fx-border-color: #E8695E;
+    -fx-border-width: 2;
+    -fx-border-style: dashed;
+    -fx-border-radius: 14;
+    -fx-border-insets: 6;
+    -fx-effect: dropshadow(gaussian, rgba(91, 58, 41, 0.22), 10, 0, 0, 4);
+}
+.nama-produk { -fx-font-weight: bold; -fx-font-size: 16px; }
+.harga-produk { -fx-text-fill: #BB3222; -fx-font-weight: bold; -fx-font-size: 15px; }
+
+.bingkai-foto {
+    -fx-background-color: #FFF1D0;
+    -fx-background-radius: 14;
+    -fx-border-color: #F0C987;
+    -fx-border-width: 2;
+    -fx-border-radius: 14;
+}
+
+/* ---------- Area gulir ---------- */
+.scroll-pane, .scroll-pane > .viewport { -fx-background-color: transparent; }
+.scroll-bar .thumb {
+    -fx-background-color: #E8A33D;
+    -fx-background-radius: 8;
+}
+
+/* ---------- Dialog konfirmasi hapus ---------- */
+.dialog-pane { -fx-background-color: #FFF3D6; -fx-font-family: "Trebuchet MS"; }
+.dialog-pane .label { -fx-text-fill: #5B3A29; -fx-font-size: 15px; }
+.dialog-pane .button {
+    -fx-background-color: #FFD36B;
+    -fx-background-insets: 0;
+    -fx-background-radius: 20;
+    -fx-text-fill: #5B3A29;
+    -fx-padding: 8 22;
+}
+.dialog-pane .button:hover { -fx-background-color: #FFC94A; }
